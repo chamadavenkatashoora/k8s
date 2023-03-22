@@ -7,3 +7,4 @@ spec:
   - image: chamadavenkatashoora/stress
     imagePullPolicy: Always
     name: stress
+    command ["sleep","200"]
