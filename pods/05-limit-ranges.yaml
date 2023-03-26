@@ -5,15 +5,15 @@ metadata:
  name: cpu-resource-constraint
 spec:
  limits:
- -  default:
-      cpu: 500
-    defaultRequest:
-      cpu: 500m
-    max:
-      cpu: "1"
-    min:
-      cpu: 100m
-    type: Container
+ - default:
+    cpu: 500
+   defaultRequest:
+    cpu: 500m
+   max:
+    cpu: "1"
+   min:
+    cpu: 100m
+   type: Container
 ---
 apiVersion: v1
 kind: Pod
