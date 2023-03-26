@@ -5,26 +5,23 @@ metadata:
   name: cpu-resource-constraint
 spec:
   limits:
-    - default:
-        cpu: 500m
-      defaultRequest:
-        cpu: 500m
-      max:
-        cpu: "1"
-      min:
-        cpu: 100m
-        type: Container
-
+  - default:
+      cpu: "500m"
+    defaultRequest:
+      cpu: "500m"
+    max:
+      cpu: "1"
+    min:
+      cpu: "100m"
+      type: Container
 ---
 apiVersion: v1
 kind: Pod
-metadata:
+metadata: 
   name: stress
 spec:
   containers:
-    - image: chamadavenkatashoora/stress
-      imagePullPolicy: Always
-      name: stress
-      command:
-        - sleep
-        - "200"
+  - image: chamadavenkatashoora/stress
+    imagePullPolicy: Always
+    name: stress
+    command: ["sleep","200"]
