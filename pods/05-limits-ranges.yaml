@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: LimitRange
 metadata:
-  name: cpu-resource-constrainst
+  name: cpu-resource-constraint
 spec:
   limits:
   - default:
