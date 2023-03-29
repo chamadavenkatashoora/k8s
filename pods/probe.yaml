@@ -6,9 +6,9 @@ spec:
   containers:
   - image: nginx
     name: nginx
-    livelinessprobe:
+    livenessprobe:
       httpGet:
         path: /
         port: 80
-      InitialDelaySeconds: 3
-      PeriodSeconds: 5
+      initialDelaySeconds: 3
+      periodSeconds: 5
