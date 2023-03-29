@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: label-pod
+  labels:
+    course: dockers
+    duration: 25Hrs
+    trainer: Gopi
+spec:
+  containers:
+  - image: nginx:1.14.2
+    name: nginx
