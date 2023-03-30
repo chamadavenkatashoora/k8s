@@ -1,0 +1,7 @@
+apiVersion:
+kind: configMap
+metadata:
+  name: course-config
+data:
+  course: docker
+  duration: 25Hrs
